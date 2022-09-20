@@ -1,12 +1,13 @@
-import React from 'react'
+// Import components
+import Layout from '../components/Layout';
 
 function About() {
   return (
-    <div>
+    <Layout>
       <h1 className="text-3xl font-bold underline">
         About
       </h1>
-    </div>
+    </Layout>
   )
 }
 

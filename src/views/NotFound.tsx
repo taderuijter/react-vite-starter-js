@@ -1,12 +1,13 @@
-import React from 'react'
+// Import components
+import Layout from '../components/Layout';
 
 function NotFound() {
   return (
-    <div>
+    <Layout>
       <h1 className="text-3xl font-bold underline">
         Not Found
       </h1>
-    </div>
+    </Layout>
   )
 }
 
