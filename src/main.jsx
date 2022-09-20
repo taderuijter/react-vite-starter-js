@@ -1,13 +1,13 @@
+// Import React library
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+// Import the app components
 import App from './App'
+
+// Import tailwind css
 import './index.css'
-import AppContext from './store/AppContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AppContext>
-      <App />
-    </AppContext>
-  </React.StrictMode>
+  <App />
 )
