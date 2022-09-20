@@ -1,12 +1,13 @@
-function App() {
+import React from 'react'
 
+function Home() {
   return (
-    <div className="App">
+    <div>
       <h1 className="text-3xl font-bold underline">
-        Hello world!
+        Homepage
       </h1>
     </div>
   )
 }
 
-export default App
+export default Home

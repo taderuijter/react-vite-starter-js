@@ -1,13 +1,29 @@
-// Import React library
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+// Import Libraries
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Import the app components
-import App from './App'
+// Global styling
+import "@/style.css";
 
-// Import tailwind css
-import './index.css'
+// React Views
+import Home from "@/views/Home";
+import About from "@/views/About";
+import NotFound from "@/views/NotFound";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-)
+// React Router Paths
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/about",
+    element: <About />
+  },
+  {
+    path: "*",
+    element: <NotFound />
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<RouterProvider router={router} />);
